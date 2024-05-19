@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { Ref, onMounted, ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import { KanjiCanvas, useKanjiCanvas } from '../composables/kanji-canvas';
 
 const { makeKanjiCanvas } = useKanjiCanvas();
