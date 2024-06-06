@@ -48,6 +48,7 @@ export class KanjiCanvas {
     this.context.fillStyle = "#F9FBFF";
     this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
     this.drawGrid();
+    navigator.vibrate(100);
   }
 
   public dispose() {

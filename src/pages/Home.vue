@@ -1,29 +1,12 @@
 <template>
-    <div class="flex flex-col items-center justify-center gap-2 p-4">
-        <div class="border">
-            <canvas ref="canvas" width="300" height="300"></canvas>
+    <div class="flex flex-col justify-center w-full h-screen">
+        <div class="w-full px-2 m-auto sm:w-2/3">
+            <img class="shadow-lg rounded-xl" src="../assets/img/jlpt_1_web.jpg" />
         </div>
-        <button class="w-[300px] rounded h-10 bg-gray-100" @click="kanjiCanvas?.clear()">Clear</button>
     </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
-import { KanjiCanvas, useKanjiCanvas } from '../composables/kanji-canvas';
-
-const { makeKanjiCanvas } = useKanjiCanvas();
-
-const canvas = ref<HTMLCanvasElement | null>(null);
-
-let kanjiCanvas: KanjiCanvas | null = null;
-
-onMounted(async () => {
-    if (canvas.value) {
-        kanjiCanvas = makeKanjiCanvas(canvas.value, true);
-    }
-});
-
-
 
 </script>
 
