@@ -18,7 +18,7 @@ import { computed } from '@vue/reactivity';
 
 
 const { makeKanjiCanvas } = useKanjiCanvas();
-const { currentExercise, nextExercise } = useKanjiExcercises();
+const { currentExercise } = useKanjiExcercises();
 
 const canvas = ref<HTMLCanvasElement | null>(null);
 

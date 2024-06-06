@@ -4,7 +4,7 @@ import 今 from "../assets/今.png";
 import 他 from "../assets/他.png";
 import 令 from "../assets/令.png";
 import 元 from "../assets/元.png";
-import { KanjiCanvas } from "./kanji-canvas";
+// import { KanjiCanvas } from "./kanji-canvas";
 
 export interface KanjiDrawExcercise {
   kanji: string;
